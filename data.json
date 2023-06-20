@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Causa y Efecto",
+    "desc": "En el mundo toda acción tiene una reacción.",
+    "meditation": "En esta meditación usaras la melodía que ",
+    "afir": "Pon atención a tu corazón y di en voz alta:.'Reconozco y Acepto que tengo miedo de tomar mis propias decisiones'"
+  },
+  {
+      "id": 2,
+      "title": "2 Causa y Efecto 2",
+      "desc": "2 En el mundo toda acción tiene una reacción.",
+      "meditation": "2 En esta meditación usaras la melodía que ",
+      "afir": "2 Pon atención a tu corazón y di en voz alta:.'Reconozco y Acepto que tengo miedo de tomar mis propias decisiones'"
+    },
+    {
+      "id": 3,
+      "title": "3 Causa y Efecto 3",
+      "desc": "3 En el mundo toda acción tiene una reacción.",
+      "meditation": "3 En esta meditación usaras la melodía que ",
+      "afir": "3 Pon atención a tu corazón y di en voz alta:.'Reconozco y Acepto que tengo miedo de tomar mis propias decisiones'"
+    }
+]

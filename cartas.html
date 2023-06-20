@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/solution.css">
     <style>
     </style>
+
+
+
 </head>
 <body>
         <section id="header-carta" class="main style2 section" style="padding: 5px">
@@ -14,31 +17,37 @@
                 <div class="px-4 pt-5 my-5 text-center border-bottom">
 
                     <header class="major">
-                    <h2  class="text-white">Carta No.1</h2>
+                      <!-- <h1 id="pageTitle">Page Title</h1> -->
+                      <h3 id="pageNumberElement" class="text-white"></h3>
+                      <h1 id="pageTitleElement" class="text-white"></h1>
+
+                      <h1 id="AfirTitleElement" class="text-white"></h1>
+
+                      <!-- <div id="pageTitle">
+                        <p>Page Title</p>
+                      </div> -->
+                    <!-- <h2  class="text-white">Carta No.1</h2> -->
                     </header>
-                    <h1  class="text-white">Causa y Efecto</h1>
+
+
+                    
+
+
                 </div>
 
                     <div class="col-lg-8 mx-auto">
+                          <!-- <p>This is the Description section.</p> -->
+                          <p id="pageContentElement" style="font-size:100%; text-align:justify; line-height: 1.2; white-space: text-wrap;"></p>
 
-                        <p class="text-wrap lead mb-4"  style="font-size:100%; text-align:left; line-height: 1.2; white-space: nowrap;">En el mundo toda acción tiene una reacción. Es decir, observa donde están dirigidos tus pensamientos (acción) y cuáles son las emociones que estas experimentado en este momento (reacción). Por ejemplo, acción: si estas enfocado que no se puede ser feliz en la vida, por ende, te sentirás abrumado, amargado y hasta sin ganas de vivir.
-                          Recuerda que hasta las palabras poco amables ponen en movimiento el principio de causa y efecto. Ten en cuenta siempre que tu bienestar y el bienestar de los tuyos, es igual al bienestar común. 
-                          Nuestra vida es y será el resultado de todas las decisiones, pequeñas y grandes que hemos tomado y tomaremos.
-                          </p>
+                          <!-- <p>This is the Meditation section.</p> -->
+                          <header class="major">
+                            <h2 class="text-white" style="text-align: center;">MEDITACIÓN</h2>
+                            </header>
+     
 
-                        <header class="major">
-                        <h2 class="text-white" style="text-align: center;">MEDITACIÓN</h2>
-                        </header>
+                          <p id="pageMedElement" style="font-size:100%; text-align:center; line-height: 1.2; white-space: text-wrap;"></p>
 
-                        <p class="text-wrap lead mb-4"  style="font-size:100%; text-align:center; line-height: 1.2; white-space: nowrap;">Escucha la melodía y permítete fundirte en ella por tres minutos. Deja que afloren los sentimientos ¡NO! los califiques (ni de buenos ni de malos), solo acéptalos y exprésalos. Sigue escuchando la melodía mientras realizas la meditación y si es posible escúchala todo el día.
- 
 
-                          Mira la figura y enfoca tu atención a 5cm encima del ombligo (R17 del meridiano del riñón: armoniza el estómago y estimula la digestión). 
-                          Inhala y al exhalar con el dedo índice o del medio, aplica una presión a ese punto, con la intención de soltar los sentimientos atrapados que no te permiten tomar tus decisiones (repite tres veces o hasta que sientas que no esté tenso).
-                           Ahora, imagínate que sacas de una célula de tu cuerpo el cromosoma No. 3 e introdúcelo en una vasija de jade lleno de Jade líquido de un verde intenso, con la intensión de limpiar y purificar:
-                          •	Los códigos de memorias limitantes, implantes generacionales que te obstaculizan.
-                          •	Así mismo, se organiza, armoniza y activa su parte dormida el cromosoma 3.
-                          </p>
 
                     </div>
 
@@ -51,24 +60,13 @@
                         <h2 class="text-center white-text-with-blue-shadow">AFIRMACIÓN</h2>
                         <hr>
 
-                        <p class="gray-background text-wrap white-text-with-blue-shadow"  style="font-size:150%; text-align:center; line-height: 1.2;">Pon atención a tu corazón y desde ahí Di en voz alta: 
-                          “Reconozco y Acepto que tengo miedo de tomar mis propias decisiones, de fallar, miedo al fracaso y la impotencia que ello me acarrea (Repítelo tres veces)”
-                          Inhala y al exhalar por la boca (hasta dejar los pulmones vacíos) siente como se sueltan los bloqueos que te impiden tomar tus propias decisiones y las emociones que emergen, sin trancarlas déjalas que se manifiesten. 
-                          Si todavía sientes traba en alguna parte del cuerpo vuelve a repetir por tres veces más hasta que sientas descanso en el cuerpo. 
-                          Pon atención a tu corazón y desde ahí manifiesta:
-                          “Me conecto con mi Luz que se encuentra dentro de mi corazón. 
-                          Agradezco por las experiencias vividas que me permiten crecer. 
-                          Siento la fuerza de mi interior para asumir por completo 
-                          la Responsabilidad de mi vida.
-                          Soy consciente que todas mis decisiones tendrán un resultado” (Repítelo tres veces)
-                          
-                          Durante el día expresa esta frase hasta completarla 72 veces (siempre sintiendo el corazón):
-                          “Confío en que mi decisión es la mejor para esta etapa en mi vida”</p>
+                        <p id="pageAfirElement" class="gray-background text-wrap white-text-with-blue-shadow"  style="font-size:150%; text-align:center; line-height: 1.2;"></p>
 
 
                     </div>
 
         </section>
+          <!-- // Music button section -->
         <section id="music_btn" class="main style2">
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
               <button class="btn btn-outline-primary btn-lg" id="ASong" onClick="playPause()">
@@ -78,7 +76,7 @@
 
             </div>
           </section>
-          
+
           <script>
             function playPause() {
               var audioElement = document.getElementById("audioElement");
@@ -90,12 +88,13 @@
             }
           </script>
           
-
+        <!-- // Images section --> pageImgElement
 
     <section class="main style1">
             <div class="overflow-hidden text-center"  style="max-height: 60vh;">
 
                 <div class="container text-center" >
+                      <img id="pageImgElement" src= "" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Imagen Carta 1" width="350" height="600" loading="lazy">
                       <img src= "./images/imagen_carta_1_ai.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Imagen Carta 1" width="350" height="600" loading="lazy">
 
 
@@ -123,5 +122,51 @@
           }
         </script>
         </section>
+
+        <script>
+
+
+
+          // Retrieve the page title and content from sessionStorage
+          var randomNumber = sessionStorage.getItem("randomNumber");
+          var cartaNumber = sessionStorage.getItem("cartaNumber");
+          var pageTitle = sessionStorage.getItem("pageTitle");
+          var pageContent = sessionStorage.getItem("pageContent");
+          var pageMed = sessionStorage.getItem("pageMed");
+          var contentAfir = sessionStorage.getItem("contentAfir");
+
+
+          var pageNumberElement = document.getElementById("pageNumberElement");
+          var pageTitleElement = document.getElementById("pageTitleElement");
+          var pageContentElement = document.getElementById("pageContentElement");
+          var pageMedElement = document.getElementById("pageMedElement");
+          var pageAfirElement = document.getElementById("pageAfirElement");
+          var pageImgElement = document.getElementById("pageImgElement");
+
+
+          var imgVarStart = "./images/imagen_carta_";
+          var randomVar = randomNumber; 
+          var imgVarEnd = ".jpg";
+
+
+          // Construct the image URL
+          var imageToDisplay = imgVarStart + randomVar + imgVarEnd;
+
+
+          // Set the text content of the element to the value of the pageTitle variable
+
+          pageNumberElement.textContent = cartaNumber;
+          pageTitleElement.textContent = pageTitle;
+          pageContentElement.textContent = pageContent;
+          pageMedElement.textContent = pageMed;
+          pageAfirElement.textContent = contentAfir;
+          // pageImgElement.textContent = imageToDisplay;
+          pageImgElement.src = imageToDisplay;
+
+
+          // Update the HTML elements with the retrieved content
+ 
+        </script>
+        
 </body>
 </html>
