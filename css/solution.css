@@ -34,32 +34,32 @@
 }
 
 .divider {
-  position: relative;
-  height: 50px; /* Adjust the height as needed */
-  background-color: #023047; /* Adjust the background color */
-}
-
-.divider::before,
-.divider::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  width: 50%;
-  height: 50px; /* Adjust the height as needed */
-  background-color: #023047; /* Adjust the background color */
-}
-
-.divider::before {
-  border-radius: 30% 80% 80% 80%;
-  transform: scaleX(-5) scaleY(0.5  ); /* Adjust scaleX and scaleY */
-  transform-origin: center bottom;
-}
-
-.divider::after {
-  border-radius: 80% 80% 80% 80%;
-  transform: scaleX(-10) scaleY(0.5); /* Adjust scaleX and scaleY */
-  transform-origin: center bottom;
-}
+	position: relative;
+	height: 50px; /* Adjust the height as needed */
+	background-color: #023047; /* Adjust the background color */
+  }
+  
+  .divider::before,
+  .divider::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	width: 30%;
+	height: 20px; /* Adjust the height as needed */
+	background-color: #38e029; /* Adjust the background color */
+  }
+  
+  .divider::before {
+	border-radius: 8% 8% 80% 80%;
+	transform: scaleX(-5) scaleY(2); /* Adjust scaleX and scaleY */
+	transform-origin: center bottom;
+  }
+  
+  .divider::after {
+	border-radius: 80% 80% 8% 8%;
+	transform: scaleX(-90) scaleY(5); /* Adjust scaleX and scaleY */
+	transform-origin: center bottom;
+  }
 
 /* ------------------------------------ */
 #header-carta {
@@ -101,6 +101,13 @@
   text-align: center;
 }
 
+#pageAfirElement {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    color: #333333;
+    line-height: 1.5;
+    /* Add more styles as needed */
+  }
 /* -------------------------------------*/
 
 /* Basic */
@@ -276,6 +283,12 @@ pre {
 
 .text-black {
 	color: black;
+
+
+}
+
+.text-dark-grey {
+	color: #202020;
 
 
 }
@@ -2161,3 +2174,4 @@ pre {
 			.main.style2 .icon.major {
 				color: #ffffff;
 			}
+

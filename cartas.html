@@ -45,7 +45,7 @@
                             </header>
      
 
-                          <p id="pageMedElement" style="font-size:100%; text-align:center; line-height: 1.2; white-space: text-wrap;"></p>
+                          <p id="pageMedElement" style="font-size:100%; text-align:justify; line-height: 1.2; white-space: text-wrap;"></p>
 
 
 
@@ -53,14 +53,15 @@
 
         </section>
 
-        <section id="header-afir" style="padding: 2px">
-                    <div style="padding-left: 200px;  padding-right: 200px"
->
+        <section style="padding: 2px">
+          <!-- <section id="header-afir" style="padding: 2px"> -->
+                    <div style="padding-left: 200px;  padding-right: 200px">
                         <hr>
-                        <h2 class="text-center white-text-with-blue-shadow">AFIRMACIÓN</h2>
+                        <h2 class="text-center">AFIRMACIÓN</h2>
+                        <!-- <h2 class="text-center white-text-with-blue-shadow">AFIRMACIÓN</h2> -->
                         <hr>
-
-                        <p id="pageAfirElement" class="gray-background text-wrap white-text-with-blue-shadow"  style="font-size:150%; text-align:center; line-height: 1.2;"></p>
+                        <p id="pageAfirElement" style="font-size:100%; text-align:justify; line-height: 1.2; white-space: text-wrap;"></p>
+                        <!-- <p id="pageAfirElement" class="gray-background text-wrap text-dark-grey"  style="font-size:150%; text-align:center; line-height: 1.2;"></p> -->
 
 
                     </div>
@@ -155,11 +156,18 @@
 
           // Set the text content of the element to the value of the pageTitle variable
 
-          pageNumberElement.textContent = cartaNumber;
-          pageTitleElement.textContent = pageTitle;
-          pageContentElement.textContent = pageContent;
-          pageMedElement.textContent = pageMed;
-          pageAfirElement.textContent = contentAfir;
+          pageNumberElement.innerHTML = cartaNumber;
+          pageTitleElement.innerHTML = pageTitle;
+          pageContentElement.innerHTML = pageContent;
+          pageMedElement.innerHTML = pageMed;
+          // pageAfirElement.textContent = contentAfir;
+
+          // Set the HTML content of the pageAfirElement
+          pageAfirElement.innerHTML = contentAfir;
+
+
+
+
           // pageImgElement.textContent = imageToDisplay;
           pageImgElement.src = imageToDisplay;
 
