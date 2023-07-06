@@ -98,8 +98,10 @@
 
                 <div class="container text-center" >
                       <img id="pageImgElement" src= "" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Imagen Carta 1" width="350" height="600" loading="lazy">
-                      <img src= "./images/women_jade2_8x1k.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Imagen Carta 1" width="350" height="600" loading="lazy">
+                      <!-- <img src= "./images/women_jade2_8x1k.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Imagen Carta 1" width="350" height="600" loading="lazy"> -->
+                      <img id="pageImgElement_2" src= "" onerror="errorHandler()" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Imagen Carta 1" width="350" height="600" loading="lazy">
 
+                      
 
                 </div>
 
@@ -123,6 +125,12 @@
             }
             isPlaying = !isPlaying;
           }
+
+          // handle error if no image
+          const errorHandler = (error) => {
+          pageImgElement_2.src = "./images/Lecturas_del_Alma_mockup.jpg"
+          }
+
         </script>
         </section>
 
@@ -145,11 +153,13 @@
           var pageMedElement = document.getElementById("pageMedElement");
           var pageAfirElement = document.getElementById("pageAfirElement");
           var pageImgElement = document.getElementById("pageImgElement");
+          var pageImgElement_2 = document.getElementById("pageImgElement_2");
           var pageMusicElement = document.getElementById("pageMusicElement");
 
 
           var imgVarStart = "./images/imagen_carta_";
           var randomVar = randomNumber; 
+          randomVar++;
           var imgVarEnd = ".jpg";
 
           var musicVarStart = "./music/musicarta_";
@@ -158,7 +168,9 @@
 
           // Construct the image and music URL
           var imageToDisplay = imgVarStart + randomVar + imgVarEnd;
+          var imageToDisplay_2 = imgVarStart + randomVar  + "_1" + imgVarEnd;
           var musicToPlay = musicVarStart + randomVar + musicVarEnd;
+
 
 
           // Set the text content of the element to the value of the pageTitle variable
@@ -171,16 +183,14 @@
 
           // Set the HTML content of the pageAfirElement
           pageAfirElement.innerHTML = contentAfir;
-
-
-
-
-          // pageImgElement.textContent = imageToDisplay;
           pageImgElement.src = imageToDisplay;
+          pageImgElement_2.src = imageToDisplay_2;
+
+
           pageMusicElement.src = musicToPlay;
 
 
-          // Update the HTML elements with the retrieved content
+         // Update the HTML elements with the retrieved content
  
         </script>
         
