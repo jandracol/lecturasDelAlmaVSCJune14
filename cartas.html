@@ -60,6 +60,7 @@
                         <h2 class="text-center">AFIRMACIÓN</h2>
                         <!-- <h2 class="text-center white-text-with-blue-shadow">AFIRMACIÓN</h2> -->
                         <hr>
+
                         <p id="pageAfirElement" style="font-size:100%; text-align:justify; line-height: 1.2; white-space: text-wrap;"></p>
                         <!-- <p id="pageAfirElement" class="gray-background text-wrap text-dark-grey"  style="font-size:150%; text-align:center; line-height: 1.2;"></p> -->
 
@@ -71,7 +72,8 @@
         <section id="music_btn" class="main style2">
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
               <button class="btn btn-outline-primary btn-lg" id="ASong" onClick="playPause()">
-                <audio id="audioElement" src="./music/musicarta_40.mp3" loop></audio>
+                <!-- <audio id="audioElement" src="./music/musicarta_40.mp3" loop></audio> -->
+                <audio id="pageMusicElement" src="" loop></audio>
                 Música On/Off
               </button>
 
@@ -143,15 +145,20 @@
           var pageMedElement = document.getElementById("pageMedElement");
           var pageAfirElement = document.getElementById("pageAfirElement");
           var pageImgElement = document.getElementById("pageImgElement");
+          var pageMusicElement = document.getElementById("pageMusicElement");
 
 
           var imgVarStart = "./images/imagen_carta_";
           var randomVar = randomNumber; 
           var imgVarEnd = ".jpg";
 
+          var musicVarStart = "./music/musicarta_";
+          // var randomVar = randomNumber; 
+          var musicVarEnd = ".wav";
 
-          // Construct the image URL
+          // Construct the image and music URL
           var imageToDisplay = imgVarStart + randomVar + imgVarEnd;
+          var musicToPlay = musicVarStart + randomVar + musicVarEnd;
 
 
           // Set the text content of the element to the value of the pageTitle variable
@@ -170,6 +177,7 @@
 
           // pageImgElement.textContent = imageToDisplay;
           pageImgElement.src = imageToDisplay;
+          pageMusicElement.src = musicToPlay;
 
 
           // Update the HTML elements with the retrieved content
