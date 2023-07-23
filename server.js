@@ -1,4 +1,5 @@
 import express from 'express';
+
 import { MongoClient as _MongoClient } from 'mongodb';
 const app = express();
 
@@ -38,3 +39,4 @@ app.get('/api/pageTitles', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+

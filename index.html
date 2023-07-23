@@ -9,11 +9,65 @@
   <link rel="stylesheet" href="./css/solution.css">
 
 
+  <script>
+      
+    // Function to open the image popup
+      function openImagePopup(imageUrl) {
+        // const id = ""
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+
+        // Set the image source to the desired image URL
+          // const imageUrl = './images/CartaLink_Contenido.jpg';
+
+        modalImage.src = imageUrl;
+        modal.style.display = 'block';
+      }
+
+      // Function to close the image popup
+      function closeImagePopup() {
+        const modal = document.getElementById('imageModal');
+        modal.style.display = 'none';
+      }
+
+
+  </script>
 </head>
 
-
-
 <body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" >
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav"  style="left: 80px">
+          <img src="./images/Logo_LDA_Color.png" alt="Bootstrap" width="55" height="55">
+          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Contenido.jpg')">Contenido</a>
+          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Reflexion.jpg')">Reflexión</a>
+          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Meridiano1.jpg')">Meridiano</a>
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Meridiano2.jpg')">Meridiano</a> -->
+          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Limpieza1.jpg')">Limpieza - purificación </a>
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Limpieza2.jpg')">Limpieza - purificación </a> -->
+          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Afirmacion1.jpg')">Afirmación</a>
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Afirmacion2.jpg')">Afirmación</a> -->
+          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Preparacion1.jpg')">Preparación</a>
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Preparacion2.jpg')">Preparación</a> -->
+
+         </div>
+
+        <!-- Modal or Lightbox container -->
+          <div id="imageModal" class="modal">
+            <span class="close" onclick="closeImagePopup()">&times;</span>
+            <img id="modalImage" class="modal-content">
+          </div>
+
+        
+      </div>
+    </div>
+  </nav>
 
 
       <!-- Title -->
@@ -137,6 +191,7 @@
     </div>
   </section>
   <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -2175,3 +2175,63 @@ pre {
 				color: #ffffff;
 			}
 
+/* Style for the modal */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	/* padding-top: 20px; */
+	padding: 25px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	/* overflow: auto; */
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+	max-width: 40%;
+	max-height: 100%;
+	margin: auto;
+	display: block;
+	border: 1px solid #ccc;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .close {
+	color: #f1f1f1;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	top: 30px;
+	right: 40px;
+	font-weight: bold;
+	cursor: pointer;
+  }
+  
+  .close:hover {
+	color: #bbb;
+  }
+
+
+
+  /* Style for the navbar and links (adjust as needed) */
+  .navbar-nav {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	background-color: #f1f1f1;
+  }
+  
+  .nav-link {
+	margin: 0 10px;
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+  }
+  
+  .nav-link:hover {
+	color: #007bff;
+  }
+  
