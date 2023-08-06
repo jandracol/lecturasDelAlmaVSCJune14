@@ -7,7 +7,7 @@
   background: linear-gradient(300deg, #023047, #146d83, #2490c2);
   /* background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172); */
   background-size: 180% 180%;
-  animation: gradient-animation 5s ease infinite;
+  animation: gradient-animation 4s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -2067,7 +2067,7 @@ pre {
 /* Main */
 
 	.main {
-		padding: 6em 0 4em 0 ;
+		padding: 3em 0 4em 0 ;
 	}
 
 
@@ -2178,20 +2178,22 @@ pre {
 /* Style for the modal */
 .modal {
 	display: none;
-	position: fixed;
+	position: center;
 	z-index: 1;
 	/* padding-top: 20px; */
-	padding: 25px;
+	padding: 5px;
+	margin-top: 30px;
+	margin-left: 10%;
 	left: 0;
 	top: 0;
-	width: 100%;
-	height: 100%;
+	width: 80%;
+	height: 90%;
 	/* overflow: auto; */
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(172, 55, 146, 0.8);
   }
   
   .modal-content {
-	max-width: 40%;
+	max-width: 50%;
 	max-height: 100%;
 	margin: auto;
 	display: block;
