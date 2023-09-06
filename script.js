@@ -462,11 +462,21 @@ var contentAfirs = [
 
 function gotoNewPage(selNumber) {
   
+  openImagePopup_upsell()
+  // clickCount_2++;
+
+  // if (clickCount_2 === 2) {
+  //   const popup = document.getElementById('imagePopup');
+  //   popup.style.display = 'block';
+  //   clickCount_2 = 0; // Reset click count
+  // }
+
+
   var randomNumberIndex = selNumber;
   // var randomNumberIndex = Math.floor(Math.random() * cartaNumbers.length);
   // Generate a random number between 1 and 40
   // var ranSelNum = 3;
-  var ranSelNum = Math.floor(Math.random() * 74) + 1;
+  var ranSelNum = Math.floor(Math.random() * 4) + 1;
 
   // var randomNumber = randomNumberIndex + 1
   var randomNumber = ranSelNum

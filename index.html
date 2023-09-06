@@ -11,9 +11,20 @@
 
 
   <script>
-      
+          let clickCount_2 = 0;
+
+            let clickCount_1 = 0;
     // Function to open the image popup
       function openImagePopup(imageUrl) {
+        clickCount_1++;
+
+     // Check if the button has been clicked three times
+      if (clickCount_1 === 2) {
+        const popup = document.getElementById('imagePopup');
+        popup.style.display = 'block';
+        clickCount_1 = 0; // Reset click count
+      }
+
         // const id = ""
         const modal = document.getElementById('imageModal');
         const modalImage = document.getElementById('modalImage');
@@ -31,8 +42,59 @@
         modal.style.display = 'none';
       }
 
+      // Code for Upsell
+
+      let clickCount = 0;
+
+    // Function to open the image popup
+    function openImagePopup_upsell() {
+      clickCount++;
+
+      // Check if the button has been clicked three times
+      if (clickCount === 2) {
+        const popup = document.getElementById('imagePopup');
+        popup.style.display = 'block';
+        clickCount = 0; // Reset click count
+      }
+    }
+
+    // Function to close the image popup
+    function closeImagePopup_upsell() {
+      const popup = document.getElementById('imagePopup');
+      popup.style.display = 'none';
+    }
+
+    // Function to open an external link in a new window
+    function openExternalLink() {
+      window.open('https://bit.ly/almayvidaplenas_vsl', '_blank');
+    }
 
   </script>
+
+<style>
+  /* Add CSS styles for the popup */
+  .popup {
+    display: none;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+
 </head>
 
 <body>
@@ -44,6 +106,11 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Button to trigger the popup -->
+      <!-- <button id="popupButton" onclick="openImagePopup_upsell()">Open Image Popup</button> -->
+
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 170px;  padding-right:0px;  padding-top:10px">
         <div class="navbar-nav me-auto mb-2 mb-lg-0"  style="left: 100px">
           <!-- <div class="navbar-nav"  style="left: 80px"></div> -->
@@ -179,6 +246,53 @@
       </section>
   
   </div>        
+
+  <!-- Popup window -->
+  <div id="imagePopup" class="popup">
+    <div class="popup-content">
+      <!-- Image with size parameters -->
+      <img id="popupImage" src="./images/Lecturas_del_Alma_mockuo_2.jpg" alt="Popup Image" width="650" height="400">
+
+      <!-- Button to open an external link in a new window -->
+      <button onclick="openExternalLink()"  style="background-color: darkgreen; color: white; margin-top: 20px; margin-bottom: 20px;">Deseo unirme a Membresía PREMIUM</button>
+      <br>
+
+      <!-- Text link to close the popup -->
+      <a href="#" onclick="closeImagePopup_upsell()" style="color: darkblue;">No, no quiero esto, quiero seguir sendo un perdedor, JAJA</a>
+
+    </div>
+  </div>
+  
+  <section id="upsel" class="main style1 section" style="
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5;">
+    <div class="container vh-50">
+      <div class="row gtr-150">
+        <div class="col col-12-medium">
+          <header class="major">
+            <h2>LECTURAS DEL ALMA</h2>
+            <h1>Esta es la versión limitada</h1>
+          </header>
+          <p class="text-black">¿Quieres disfrutar la versión completa <br />
+            <p class="text-black">Y ganar acceso a las 74 cartas? <br />
+            <p class="text-black">Dale Click al botón <br />
+              
+      <!-- Button to trigger the popup -->
+      <!-- <button id="popupButton" style="background: green; color:white" onclick="openImagePopup_upsell()">Quiero la versión PREMIUM!</button> -->
+
+      <button onclick="openExternalLink()"  style="background-color: darkgreen; color: white; margin-top: 20px; margin-bottom: 20px;">Deseo unirme a Membresía PREMIUM</button>
+
+        </div>
+        <!-- <div class="col-6 col-12-medium imp-medium">
+          <span class="image fit"><img src="static/images/Lecturas_del_Alma_mockup.jpg" alt="" /></span>
+
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
   <!-- Footer -->
   <section id="contact" class="gradient-background">
     <div class="container ">
