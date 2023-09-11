@@ -476,7 +476,7 @@ function gotoNewPage(selNumber) {
   // var randomNumberIndex = Math.floor(Math.random() * cartaNumbers.length);
   // Generate a random number between 1 and 40
   // var ranSelNum = 3;
-  var ranSelNum = Math.floor(Math.random() * 4) + 1;
+  var ranSelNum = Math.floor(Math.random() * 6) + 1;
 
   // var randomNumber = randomNumberIndex + 1
   var randomNumber = ranSelNum
