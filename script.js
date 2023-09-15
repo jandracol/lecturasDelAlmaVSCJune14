@@ -462,7 +462,7 @@ var contentAfirs = [
 
 function gotoNewPage(selNumber) {
   
-  openImagePopup_upsell()
+  // openImagePopup_upsell()
   // clickCount_2++;
 
   // if (clickCount_2 === 2) {
@@ -476,7 +476,7 @@ function gotoNewPage(selNumber) {
   // var randomNumberIndex = Math.floor(Math.random() * cartaNumbers.length);
   // Generate a random number between 1 and 40
   // var ranSelNum = 3;
-  var ranSelNum = Math.floor(Math.random() * 6) + 1;
+  var ranSelNum = Math.floor(Math.random() * 74) + 1;
 
   // var randomNumber = randomNumberIndex + 1
   var randomNumber = ranSelNum
