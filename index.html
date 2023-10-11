@@ -16,14 +16,14 @@
             let clickCount_1 = 0;
     // Function to open the image popup
       function openImagePopup(imageUrl) {
-        clickCount_1++;
+        // clickCount_1++;
 
      // Check if the button has been clicked three times
-      if (clickCount_1 === 2) {
-        const popup = document.getElementById('imagePopup');
-        popup.style.display = 'block';
-        clickCount_1 = 0; // Reset click count
-      }
+      // if (clickCount_1 === 2) {
+      //   const popup = document.getElementById('imagePopup');
+      //   popup.style.display = 'block';
+      //   clickCount_1 = 0; // Reset click count
+      // }
 
         // const id = ""
         const modal = document.getElementById('imageModal');
@@ -43,6 +43,116 @@
       }
 
   </script>
+
+  <!-- ChatGPT for the popup windows   -->
+    <script>
+      var popupTextContenido = `
+      <h2>CONTENIDO</h2>
+      <p style="text-align: justify;">
+        Cada carta que escoges te ofrece una variedad de contenido destinado a proporcionarte una experiencia enriquecedora. <br><br> ¿Alguna vez te has preguntado quién eres en realidad? <br><br>¿Te gustaría encontrar tu camino de desarrollo personal y emocional? <br><br>¡Entonces te tenemos una solución! <br><br> Con nuestras cartas, podrás descubrir qué te está impidiendo avanzar en tu vida.<br><br> Cada carta tiene una energía y un significado particular que te ayudará a resolver tus dudas, indecisiones o dificultades.<br><br> ¡Te darán la claridad que necesitas para entender lo que está sucediendo en tu vida! <br><br> Y lo mejor, es que todo comienza descubriendo tu luz, la energía del creador que está dentro de ti. <br><br> A partir de ahí, alcanzarás la plenitud del amor, la paciencia, la paz y la claridad para comprender desde tu interior que siempre estás en movimiento y que siempre tendrás la fuerza para sobrellevar cualquier evento o reto que se te presente. <br><br> Cada día, nuestras lecturas te ofrecen la oportunidad de conectarte con tu ser interior y encontrar la guía y el apoyo que necesitas para lcanzar la realización personal y la felicidad.<br><br>
+      </p>
+      `;
+
+      var popupTextReflexion = `
+      <h2>REFLEXION</h2>
+      <p style="text-align: justify;">
+        Dentro de cada carta, encontrarás una reflexión profunda y significativa relacionada con la temática específica de tu consulta o trabajo diario. Estas reflexiones están diseñadas para invitarte a adentrarte en el tema desde una perspectiva personal y reflexiva, fomentando así un mayor autoconocimiento y crecimiento interior.
+      </p>
+
+      <p style="text-align: justify;">
+        Cada reflexión es cuidadosamente redactada para que resuene con tus experiencias y despierte tu capacidad de reflexionar sobre la situación en cuestión. Te animará a explorar tus pensamientos, emociones y creencias en relación a la temática abordada, lo que te permitirá obtener una comprensión más profunda de ti mismo y de tu entorno.
+      </p>
+      <p style="text-align: justify;">
+        Estas reflexiones tienen como objetivo ayudarte a encontrar nuevas perspectivas, descubrir tus fortalezas y áreas de mejora, y despertar tu potencial para abordar los desafíos que se presenten. Pueden servir como un punto de partida para la introspección y el análisis, y te brindan la oportunidad de profundizar en tu crecimiento personal y desarrollo espiritual.
+      </p>
+      <p style="text-align: justify;">
+        Recuerda que cada reflexión es única y está diseñada específicamente para complementar la temática de tu consulta o trabajo diario. Aprovecha este valioso recurso para expandir tu conciencia y obtener una visión más clara de tus metas, sueños y deseos. A medida que te sumerjas en estas reflexiones, estarás dando pasos hacia una mayor comprensión de ti mismo y una vida más significativa y auténtica.
+      </p>
+      `;
+
+      var popupTextMeridiano = `
+      <h2>MERIDIANO</h2>
+      <p style="text-align: justify;">
+        Cada carta incluye una sugerencia para trabajar en un punto específico del cuerpo relacionado con uno de los 12 meridianos. 
+      </p>
+
+      <p style="text-align: justify;">
+        Estos meridianos son canales de energía reconocidos en la medicina tradicional china, y trabajar en ellos puede ayudar a equilibrar y armonizar el flujo energético del cuerpo.
+      </p>
+
+      <p style="text-align: justify;">
+        Los meridianos se consideran como trayectos recorridos por una energía invisible, que no puede ser cuantificada materialmente. Algunos meridianos siguen rutas a lo largo de canales físicos, mientras que otros siguen trayectorias paralelas
+      </p>
+
+            <p style="text-align: justify;">
+              Estos meridianos forman una red interconectada que permite el flujo armonioso de la energía vital por todo el cuerpo, apoyando así el equilibrio y bienestar holístico.
+      </p>
+            <p style="text-align: justify;">
+              Por lo tanto, el meridiano es un camino recorrido por la energía vital, que algunos llaman energía divina o energía universal. <br><br> Estos canales de energía permiten que el cuerpo funcione. 
+      </p>
+            <p style="text-align: justify;">
+              ¡Es la base de la vida! (Geomer, 2017).
+      </p>
+      `;
+
+      var popupTextLimpieza = `
+      <h2>LIMPIEZA / PURIFICACION</h2>
+      <p style="text-align: justify;">
+        Cada carta aborda el proceso de limpieza, purificación y activación de la información cromosómica para lograr una transformación y crecimiento a nivel genético y energético. Se busca liberar y deshacerse de patrones limitantes en la genética, purificando y ordenando los cromosomas para despertar nuestra verdadera naturaleza divina.
+      </p>
+
+      <p style="text-align: justify;">
+        Al realizar esta activación y reorganización cromosómica, se desbloquean capacidades latentes en nuestro código genético, permitiendo un mayor despliegue de nuestro ser multidimensional y brindando una oportunidad para acceder a niveles más profundos de conciencia y evolución. Este proceso nos invita a expandir nuestros límites y crecer personal y espiritualmente en armonía con nuestra verdadera esencia.
+      </p>
+
+      `;
+
+      var popupTextAfirmacion = `
+      <h2>AFIRMACION</h2>
+      <p style="text-align: justify;">
+        Estas afirmaciones están diseñadas para estar en sintonía con la temática de la consulta o el trabajo diario, y se pueden repetir para reprogramar la mente, fortalecer creencias y transformar actitudes hacia aspectos específicos de la vida.
+      </p>
+
+      <p style="text-align: justify;">
+        Es importante recordar que la constante repetición de las afirmaciones es clave para reforzar su impacto en la mente subconsciente y cultivar una mentalidad positiva y la confianza en uno mismo. Al asimilar estas afirmaciones en la rutina diaria, se permite que influyan en la forma de pensar y actuar, lo que lleva a sentirse más empoderado y preparado para enfrentar desafíos y manifestar deseos en la vida.
+      </p>
+
+      `;
+    
+      var popupTextMusica = `
+      <h2>MUSICA</h2>
+      <p style="text-align: justify;">
+        La música fué seleccionada cuidadosamente para complementar la temática de la carta, convirtiéndola en una herramienta poderosa que te acompañará en tu proceso de reflexión y crecimiento personal. La música, como expresó la 'Unión de la Hermandad Mundial Fundación Suprema Mevlana (2007)'', es universal y sus vibraciones tienen efectos profundos en nuestras células.
+      </p>
+
+      <p style="text-align: justify;">
+        Te recomendamos escuchar esta composición musical varias veces al día, ya que el sonido de la melodía te ayudará a desbloquear cualquier obstáculo que te impida alcanzar tus objetivos, llevándote finalmente a la armonía deseada. Permítete sumergirte en sus notas y dejarte llevar por sus ritmos, permitiendo que la música fluya a través de ti y te envuelva en su energía sanadora.
+      </p>
+
+      <p style="text-align: justify;">
+        Es importante tener en cuenta que escuchar esta composición musical puede generar algunos efectos físicos o emocionales. Puede ser que experimentes dolores, llanto, tristeza, rabia, ansiedad u otros sentimientos intensos. No te preocupes, estos efectos son parte del proceso y debes aceptarlos. Forman parte del mecanismo de 'soltar y liberar' energía estancada, y te ayudan a transitar y trascender los objetivos que te indica la carta.
+      </p>
+      <p style="text-align: justify;">
+        Recuerda que la música es una herramienta poderosa para el autocuidado y el crecimiento personal. Permítete sumergirte en ella, permitiendo que sus vibraciones te guíen hacia un mayor equilibrio y bienestar en todos los aspectos de tu vida.
+      </p>
+      `;
+
+      function displayTextPopup(text) {
+          const textPopup = document.getElementById('textPopup');
+          const textToDisplay = document.getElementById('textToDisplay');
+          // textToDisplay.textContent = text;
+          textToDisplay.innerHTML = text;
+          textPopup.style.display = 'block';
+      }
+
+      function closeTextPopup() {
+          const textPopup = document.getElementById('textPopup');
+          textPopup.style.display = 'none';
+      }
+    </script>
+
+
+  <!--  -->
 </head>
 
 <body>
@@ -59,18 +169,32 @@
       <!-- <button id="popupButton" onclick="openImagePopup_upsell()">Open Image Popup</button> -->
 
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 170px;  padding-right:0px;  padding-top:10px">
-        <div class="navbar-nav me-auto mb-2 mb-lg-0"  style="left: 100px">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 100px;  padding-right:0px;  padding-top:10px">
+        <div class="navbar-nav me-auto mb-lg-0 w-100"  style="left: 50px; right: 50px">
           <!-- <div class="navbar-nav"  style="left: 80px"></div> -->
-          <img src="./images/Logo_LDA_Color.png" alt="Bootstrap" width="55" height="55">
-          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Contenido.png')">Contenido</a>
-          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Reflexion.png')">Reflexión</a>
-          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Meridiano.png')">Meridiano</a>
+          <img src="./images/Logo_LDA_Color.png" alt="Bootstrap" width="45" height="45">
+          <a href="#carta-description" style="margin-left: 10%; margin-right: 10%; margin-top: 0%; font-size: 15px ; color: darkblue;">Ir a: "Explicación de elementos clave en cada carta" - !Lectura importante!</a>
+          
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('Contenido')">Contenido</a> -->
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Contenido.png')">Contenido</a> -->
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Reflexion.png')">Reflexión</a> -->
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Meridiano.png')">Meridiano</a> -->
           <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Meridiano2.jpg')">Meridiano</a> -->
-          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Limpieza.png')">Limpieza - purificación </a>
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Limpieza.png')">Limpieza - purificación </a> -->
           <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Limpieza2.jpg')">Limpieza - purificación </a> -->
-          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Afirmacion.png')">Afirmación</a>
-          <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_musica.png')">Música</a>
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Afirmacion.png')">Afirmación</a> -->
+          <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_musica.png')">Música</a> -->
+          <!--  ChatGPT-->
+          
+          <!-- <a class="nav-link" href="#" onclick="displayTextPopup(popupText)">Música</a>
+              <div id="textPopup" class="popup" style="display: none;">
+                  <div class="popup-content">
+                      <span id="textToDisplay"></span>
+                      <button onclick="closeTextPopup()">Volver atrás</button>
+                  </div>
+              </div> -->
+
+          <!--  -->
     
          </div>
 
@@ -104,7 +228,7 @@
 
               </div>
               <div style="margin-top: 20px; font-size: 15px ;">
-                <a href="https://lecturasdelalma.com">LecturasDelAlma.com</a>
+                <a href="https://cursos.almayvidaplenas.com">AlmaYVidaPlenas.com</a>
               </div>
             </div>
             <div class="col" style="
@@ -242,7 +366,64 @@
       <!-- </div>
     </div>
   </section> -->
+<section id="carta-description">
+    <!-- NavBar bottom-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary gradient-background"> 
+      <div class="container-fluid"  >
 
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Button to trigger the popup -->
+    <!-- <button id="popupButton" onclick="openImagePopup_upsell()">Open Image Popup</button> -->
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 80px;  padding-right:0px;  padding-top:5px">
+      <div style="right: 10px; margin-right: 1%";>Elementos de cada carta: </div>
+      
+      <div class="navbar-nav me-auto mb-2 mb-lg-0"  style="left: 100px">
+        <!-- <div class="navbar-nav"  style="left: 80px"></div> -->
+        <!-- <a class="nav-link" href="#" onclick="openImagePopup('Contenido')">Contenido</a> -->
+        <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Contenido.png')">Contenido</a> -->
+        <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Reflexion.png')">Reflexión</a> -->
+        <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Meridiano.png')">Meridiano</a> -->
+        <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Meridiano2.jpg')">Meridiano</a> -->
+        <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Limpieza.png')">Limpieza - purificación </a> -->
+        <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Limpieza2.jpg')">Limpieza - purificación </a> -->
+        <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_Afirmacion.png')">Afirmación</a> -->
+        <!-- <a class="nav-link" href="#" onclick="openImagePopup('./images/CartaLink_musica.png')">Música</a> -->
+        <!--  ChatGPT-->
+         <a class="nav-link" href="#" onclick="displayTextPopup(popupTextContenido)">Contenido</a>
+        <a class="nav-link" href="#" onclick="displayTextPopup(popupTextReflexion)">Reflexión</a>
+        <a class="nav-link" href="#" onclick="displayTextPopup(popupTextMeridiano)">Meridiano</a>
+        <a class="nav-link" href="#" onclick="displayTextPopup(popupTextLimpieza)">Limpieza/purificación </a>
+        <a class="nav-link" href="#" onclick="displayTextPopup(popupTextAfirmacion)">Afirmación</a>
+        
+        <a class="nav-link" href="#" onclick="displayTextPopup(popupTextMusica)">Música</a>
+            <div id="textPopup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <span id="textToDisplay"></span>
+                    <button onclick="closeTextPopup()" class="btn btn-secondary">Volver atrás</button>
+                </div>
+            </div>
+
+        <!--  -->
+  
+       </div>
+
+      <!-- Modal or Lightbox container -->
+        <div id="imageModal" class="modal">
+          <span class="close" onclick="closeImagePopup()">&times;</span>
+          <img id="modalImage" class="modal-content">
+        </div>
+    
+    </div>
+  </div>
+</nav>
+
+</section>
 
   <!-- Footer -->
   <section id="contact" class="gradient-background">
